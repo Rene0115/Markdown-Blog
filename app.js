@@ -12,8 +12,10 @@ import middleware from './middlewares/index.middleware.js';
 
 middleware(app);
 
- app.get('/', )
+
 const PORT = process.env.PORT ||  5111;
 app.listen(PORT, function () {
     logger.info(`listening on port ${PORT}`);
 });
+
+export default { app, logger};

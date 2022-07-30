@@ -1,9 +1,11 @@
 import express from 'express';
+import { app } from '../app.js';
 
 const router = express.Router();
 
-router.get('/test', (req, res) => {
-     res.send('in ajngj')
+
+router.get('/', (req, res) => {
+     res.render('index')
     })
 
 
