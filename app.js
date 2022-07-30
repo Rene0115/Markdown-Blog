@@ -10,6 +10,8 @@ import middleware from './middlewares/index.middleware.js';
 
  app.set('view engine', 'ejs');
 
+ 
+
 middleware(app);
 
 
