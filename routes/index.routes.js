@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     const articles = [{
         title: 'Test Article',
         createdAt: Date.now(),
-        description:
+        description: 'Test description'
     }]
      res.render('index', /*pass all articles to index */{ articles: articles })
     })
