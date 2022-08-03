@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
     const articles = [{
         title: 'Test Article',
-        createdAt: Date.now(),
+        createdAt: new Date(),
         description: 'Test description'
     }]
      res.render('index', /*pass all articles to index */{ articles: articles })
