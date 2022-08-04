@@ -9,7 +9,12 @@ router.get('/', (req, res) => {
         title: 'Test Article',
         createdAt: new Date(),
         description: 'Test description'
-    }]
+    },
+   {
+    title: 'Test Article 2',
+        createdAt: new Date (),
+        description: 'Test description 2'
+   }]
      res.render('index', /*pass all articles to index */{ articles: articles })
     })
 router.use('/articles', articleRouter)

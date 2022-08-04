@@ -2,12 +2,10 @@ import express from 'express';
 
 const articleRouter = express.Router();
 
-articleRouter.get('/', (req, res) => {
-    res.send('at articles')
-});
-
 articleRouter.get('/new', (req, res) => {  
-    res.render('articles/new')
+    res.render('new')
  })
+
+ articleRouter.post('/', (req, res))
 
 export default articleRouter;
