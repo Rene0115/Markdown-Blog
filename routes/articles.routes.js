@@ -7,7 +7,6 @@ articleRouter.get('/new', (req, res) => {
 });
 
 articleRouter.post('/', (req, res) => {
-
 });
 
 export default articleRouter;

@@ -7,10 +7,10 @@ import router from '../routes/index.routes.js';
 import errorMiddleware from './error.middleware.js';
 
 const middleware = (app) => {
+  app.use(express.urlencoded({ extended: false }));
+  app.use(express.json());
   app.use(router);
   app.use(errorMiddleware);
-  app.use(express.urlencoded({ extended: true }));
-  app.use(express.json());
   app.use(morgan());
   database();
 };
