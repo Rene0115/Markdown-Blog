@@ -6,6 +6,8 @@ articleRouter.get('/new', (req, res) => {
   res.render('new');
 });
 
-articleRouter.post('/', (req, res));
+articleRouter.post('/', (req, res) => {
+
+});
 
 export default articleRouter;
